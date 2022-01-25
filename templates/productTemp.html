@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Node Project | Product</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Patrick Hand", cursive;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to right, #faa16e, #fdcad2);
+      }
+      a {
+        text-decoration: none;
+      }
+      .container {
+        width: 500px;
+      }
+      .product_banner {
+        width: 100%;
+        height: 200px;
+        position: relative;
+        background: #fff;
+        padding: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .product_banner::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: #ffafbd;
+        opacity: 0.4;
+      }
+      .back {
+        font-size: 1.2rem;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background: #ffc3a0;
+        padding: 0.5rem;
+        border-radius: 20px;
+        z-index: 1;
+      }
+
+      .back a {
+        color: #000;
+      }
+      .product_image {
+        display: block;
+        font-size: 4rem;
+        transform: rotate(20deg);
+      }
+
+      .product_discount {
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: linear-gradient(to bottom, #ffc3a0, #ffafbd);
+        height: 90px;
+        width: 90px;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        transform: rotate(20deg) translate(40%, -50%);
+        font-size: 1.2rem;
+        z-index: 1;
+        box-shadow: 0 0 20px #222;
+      }
+      .product_content {
+        width: 100%;
+        background: #fafafa;
+      }
+
+      .product_name {
+        width: 100%;
+        text-align: center;
+        padding: 0.5rem 0;
+        background: linear-gradient(to bottom, #ffafbd, #ffc3a0);
+        color: #fff;
+        font-size: 1.8rem;
+      }
+
+      .product_detail {
+        width: 100%;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .product_price {
+        font-size: 1.8rem;
+      }
+      .product_quantity {
+        font-size: 1.8rem;
+      }
+      .cart {
+        text-align: center;
+        padding: 0.5rem;
+        background: #ffafbd;
+        transform: scale(1.1) skew(-10deg);
+      }
+      .cart a {
+        font-size: 1.5rem;
+        color: #fff;
+      }
+      .product_description {
+        padding: 1rem;
+        font-size: 1.2rem;
+      }
+
+      .no_discount {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="product_banner">
+        <span class="product_image">{%image%}</span>
+        <span class="product_image">{%image%}</span>
+        <span class="product_image">{%image%}</span>
+        <span class="product_image">{%image%}</span>
+        <span class="product_image">{%image%}</span>
+        <span class="product_image">{%image%}</span>
+        <span class="product_image">{%image%}</span>
+        <span class="product_image">{%image%}</span>
+        <span class="product_image">{%image%}</span>
+        <span class="product_image">{%image%}</span>
+        <span class="back"><a href="/">👈 Back</a></span>
+        <span class="product_discount {%no_discount%}">{%offer%}</span>
+      </div>
+      <div class="product_content">
+        <div class="product_name"><h2>{%productName%}</h2></div>
+        <div class="product_detail">
+          <span><h3 class="product_price">{%price%} 💰</h3></span>
+          <span><h3 class="product_quantity">{%quantity%} ⚖</h3></span>
+        </div>
+        <div class="cart"><a href="/">Add to cart 🛒</a></div>
+        <div class="product_description">
+          <p>{%description%}</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

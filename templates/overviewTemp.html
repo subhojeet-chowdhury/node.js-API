@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Node Project | Overview</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Patrick Hand", cursive;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to right, #ffc3a0, #ffafbd);
+      }
+      a {
+        text-decoration: none;
+      }
+
+      .main_header {
+        font-size: 3rem;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+      .card {
+        height: 70px;
+        width: 700px;
+        display: flex;
+        justify-content: space-between;
+        transform: skew(20deg);
+        background-color: #fff;
+        text-align: center;
+        -webkit-transform: skew(20deg);
+        -moz-transform: skew(20deg);
+        -ms-transform: skew(20deg);
+        -o-transform: skew(20deg);
+      }
+
+      .card > div {
+        height: 100%;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-right: 1px solid #ccc;
+        padding: 0 0.5rem;
+      }
+
+      .card > div:nth-child(2) {
+        width: 200px;
+        background: linear-gradient(to bottom, #fcb78e, #ffafbd);
+      }
+      .card > div:nth-child(3) {
+        width: 150px;
+      }
+      .card > div:nth-child(5) {
+        width: 50px;
+      }
+      .card > div:last-child {
+        border-right: none;
+        background: #f89c66;
+      }
+
+      h1,
+      a,
+      h2,
+      h3 {
+        transform: skew(-20deg);
+        -webkit-transform: skew(-20deg);
+        -moz-transform: skew(-20deg);
+        -ms-transform: skew(-20deg);
+        -o-transform: skew(-20deg);
+      }
+
+      .card_image {
+        font-size: 3rem;
+      }
+
+      .card_name {
+        font-size: 2rem;
+        font-family: "Nunito", cursive;
+        font-weight: 600;
+        color: #fff;
+      }
+      .card_discount {
+        font-size: 1.5rem;
+        background-image: linear-gradient(to right, #fcb78e, #ffafbd);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .card_quantity {
+        font-weight: 200;
+        font-size: 1.2rem;
+      }
+
+      .card_price {
+        font-size: 1.5rem;
+      }
+
+      .card_details {
+        font-size: 1.2rem;
+        color: #fff;
+      }
+      .no_discount {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="main_header">Fish Market</h1>
+    <div class="container">{%cards%}</div>
+  </body>
+</html>

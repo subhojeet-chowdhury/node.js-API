@@ -1,0 +1,49 @@
+[
+  {
+    "id": 0,
+    "productName": "Crab",
+    "image": "🦀",
+    "price": "$5",
+    "quantity": "500gm",
+    "discount": false,
+    "description": "Crabs are decapod crustaceans of the infraorder Brachyura, which typically have a very short projecting tails, usually hidden entirely under the thorax. They live in all the world's oceans, in fresh water, and on land, are generally covered with a thick exoskeleton, and have a single pair of pincers."
+  },
+  {
+    "id": 1,
+    "productName": "Prawn",
+    "image": "🦐",
+    "price": "$10",
+    "quantity": "300gm",
+    "discount": true,
+    "offer": "10% off",
+    "description": "Prawn is a common name for small aquatic crustaceans with an exoskeleton and ten legs (which is a member of the order decapoda), some of which can be eaten."
+  },
+  {
+    "id": 2,
+    "productName": "Octopus",
+    "image": "🐙",
+    "price": "$15",
+    "quantity": "500gm",
+    "discount": false,
+    "description": "An octopus is a soft-bodied, eight-limbed mollusc of the order Octopoda. The order consists of some 300 species and is grouped within the class Cephalopoda with squids, cuttlefish, and nautiloids."
+  },
+  {
+    "id": 3,
+    "productName": "Lobster",
+    "image": "🦞",
+    "price": "$20",
+    "quantity": "500gm",
+    "discount": false,
+    "description": "Lobsters are a family of large marine crustaceans. Lobsters have long bodies with muscular tails, and live in crevices or burrows on the sea floor. Three of their five pairs of legs have claws, including the first pair, which are usually much larger than the others."
+  },
+  {
+    "id": 4,
+    "productName": "Squid",
+    "image": "🦑",
+    "price": "$5",
+    "quantity": "200gm",
+    "discount": true,
+    "offer": "20% off",
+    "description": "Squid are cephalopods in the superorder Decapodiformes with elongated bodies, large eyes, eight arms and two tentacles. Like all other cephalopods, squid have a distinct head, bilateral symmetry, and a mantle. "
+  }
+]
