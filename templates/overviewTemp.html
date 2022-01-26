@@ -28,6 +28,17 @@
 
       .main_header {
         font-size: 3rem;
+        color: #f89c66;
+        position: relative;
+      }
+      .main_header::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to top, #fcb78e, #fff);
+        opacity: 0.6;
+        z-index: -1;
+        transform: rotate(-5deg);
       }
 
       .container {
@@ -47,6 +58,11 @@
         -moz-transform: skew(20deg);
         -ms-transform: skew(20deg);
         -o-transform: skew(20deg);
+        transition: 0.2s;
+      }
+
+      .card:hover {
+        transform: skew(20deg) scale(1.06);
       }
 
       .card > div {
@@ -122,7 +138,7 @@
     </style>
   </head>
   <body>
-    <h1 class="main_header">Fish Market</h1>
+    <h1 class="main_header">Seafood Market</h1>
     <div class="container">{%cards%}</div>
   </body>
 </html>
