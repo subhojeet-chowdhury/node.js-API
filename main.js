@@ -1,7 +1,6 @@
 const http = require("http");
 const fs = require("fs");
 const url = require("url");
-
 // calling replace template function
 const replaceTemplate = require(`${__dirname}/modules/replaceTemp.js`);
 
